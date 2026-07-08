@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kayes Khan // Cybersecurity Portfolio</title>
+<meta name="description" content="Kayes Khan — Cybersecurity Enthusiast. Ethical hacking, network security, penetration testing and digital forensics.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%2339ff88%22>&gt;</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Scanline / CRT overlay -->
+<div class="scanline-overlay" aria-hidden="true"></div>
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<!-- Matrix rain canvas background -->
+<canvas id="matrix-canvas" aria-hidden="true"></canvas>
+
+<!-- Skip link -->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ================= NAV ================= -->
+<header class="site-header" id="site-header">
+  <nav class="navbar" aria-label="Primary">
+    <a href="#home" class="logo">
+      <span class="logo-bracket">&lt;</span>KAYES<span class="logo-accent">.KHAN</span><span class="logo-bracket">/&gt;</span>
+    </a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="#about" class="nav-link"><span class="nav-index">01</span>About</a></li>
+      <li><a href="#skills" class="nav-link"><span class="nav-index">02</span>Skills</a></li>
+      <li><a href="#projects" class="nav-link"><span class="nav-index">03</span>Projects</a></li>
+      <li><a href="#certifications" class="nav-link"><span class="nav-index">04</span>Certs</a></li>
+      <li><a href="#learning" class="nav-link"><span class="nav-index">05</span>Learning</a></li>
+      <li><a href="#contact" class="nav-link nav-cta"><span class="nav-index">06</span>Contact</a></li>
+    </ul>
+  </nav>
+  <div class="status-strip" aria-hidden="true">
+    <span class="status-dot"></span> SYSTEM ONLINE <span class="status-sep">//</span> UPTIME: <span id="uptime-clock">00:00:00</span> <span class="status-sep">//</span> LOCATION: DHAKA, BD
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <p class="prompt-line reveal">
+        <span class="prompt-user">root@kayes-khan</span><span class="prompt-sep">:~$</span>
+        <span class="prompt-cmd">whoami</span>
+      </p>
+
+      <h1 class="hero-name glitch reveal" data-text="KAYES KHAN">KAYES KHAN</h1>
+
+      <p class="hero-typed reveal">
+        <span class="typed-caret">&gt;</span> <span id="typed-text"></span><span class="cursor-blink">_</span>
+      </p>
+
+      <blockquote class="hero-tagline reveal">
+        “Securing the digital world, one vulnerability at a time.”
+      </blockquote>
+
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">
+          <span>View Projects</span>
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <span>Get In Touch</span>
+        </a>
+      </div>
+
+      <div class="hero-meta reveal">
+        <span class="meta-chip">STATUS: <b>Actively Learning</b></span>
+        <span class="meta-chip">FOCUS: <b>Penetration Testing</b></span>
+        <span class="meta-chip">BASE: <b>Dhaka, Bangladesh</b></span>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <span class="scroll-cue-line"></span>
+      SCROLL
+    </a>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section">
+    <p class="section-eyebrow reveal">01 // ABOUT</p>
+    <h2 class="section-title reveal">cat about<span class="accent">.txt</span></h2>
+
+    <div class="window about-window reveal">
+      <div class="window-titlebar">
+        <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+        <span class="window-filename">about.txt — read only</span>
+      </div>
+      <div class="window-body about-body">
+        <p><span class="line-no">01</span> <span class="code-comment">/**</span></p>
+        <p><span class="line-no">02</span> <span class="code-comment"> * Hi, I'm Kayes — a cybersecurity enthusiast who genuinely</span></p>
+        <p><span class="line-no">03</span> <span class="code-comment"> * enjoys taking systems apart to understand how they break,</span></p>
+        <p><span class="line-no">04</span> <span class="code-comment"> * and how to build them back stronger.</span></p>
+        <p><span class="line-no">05</span> <span class="code-comment"> *</span></p>
+        <p><span class="line-no">06</span> <span class="code-comment"> * I'm passionate about ethical hacking, network security,</span></p>
+        <p><span class="line-no">07</span> <span class="code-comment"> * and continuous, hands-on learning. Right now I'm deep in</span></p>
+        <p><span class="line-no">08</span> <span class="code-comment"> * penetration testing, digital forensics, and cyber defense —</span></p>
+        <p><span class="line-no">09</span> <span class="code-comment"> * treating every CTF and lab as a live-fire drill.</span></p>
+        <p><span class="line-no">10</span> <span class="code-comment"> */</span></p>
+        <p><span class="line-no">11</span> <span class="code-key">const</span> <span class="code-var">kayes</span> = {</p>
+        <p><span class="line-no">12</span>&nbsp;&nbsp;<span class="code-prop">role</span>: <span class="code-str">"Cybersecurity Enthusiast"</span>,</p>
+        <p><span class="line-no">13</span>&nbsp;&nbsp;<span class="code-prop">mindset</span>: <span class="code-str">"curious, methodical, relentless"</span>,</p>
+        <p><span class="line-no">14</span>&nbsp;&nbsp;<span class="code-prop">currentlyExploring</span>: [<span class="code-str">"pentesting"</span>, <span class="code-str">"forensics"</span>, <span class="code-str">"defense"</span>],</p>
+        <p><span class="line-no">15</span> };</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" class="section section-alt">
+    <p class="section-eyebrow reveal">02 // SKILLS</p>
+    <h2 class="section-title reveal">nmap -sV <span class="accent">kayes-khan.skills</span></h2>
+    <p class="section-sub reveal">Simulated scan results — every open port is a skill in active use.</p>
+
+    <div class="window scan-window reveal">
+      <div class="window-titlebar">
+        <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+        <span class="window-filename">nmap_scan_report.log</span>
+      </div>
+      <div class="window-body scan-body">
+        <p class="scan-summary">Starting Nmap scan on <span class="accent">kayes-khan.skills</span> — 9 ports found open</p>
+
+        <div class="scan-table" role="table" aria-label="Skills displayed as network scan results">
+          <div class="scan-row scan-head" role="row">
+            <span role="columnheader">PORT</span>
+            <span role="columnheader">STATE</span>
+            <span role="columnheader">SERVICE</span>
+            <span role="columnheader">PROFICIENCY</span>
+          </div>
+
+          <div class="scan-row" role="row" style="--i:0">
+            <span class="port" role="cell">22/tcp</span>
+            <span class="state" role="cell">open</span>
+            <span class="service" role="cell">Network Security</span>
+            <span class="prof" role="cell"><span class="bar"><i style="--w:88%"></i></span></span>
+          </div>
+          <div class="scan-row" role="row" style="--i:1">
+            <span class="port" role="cell">1337/tcp</span>
+            <span class="state" role="cell">open</span>
+            <span class="service" role="cell">Ethical Hacking</span>
+            <span class="prof" role="cell"><span class="bar"><i style="--w:80%"></i></span></span>
+          </div>
+          <div class="scan-row" role="row" style="--i:2">
+            <span class="port" role="cell">9001/tcp</span>
+            <span class="state" role="cell">open</span>
+            <span class="service" role="cell">Linux</span>
+            <span class="prof" role="cell"><span class="bar"><i style="--w:85%"></i></span></span>
+          </div>
+          <div class="scan-row" role="row" style="--i:3">
+            <span class="port" role="cell">8080/tcp</span>
+            <span class="state" role="cell">open</span>
+            <span class="service" role="cell">Python</span>
+            <span class="prof" role="cell"><span class="bar"><i style="--w:90%"></i></span></span>
+          </div>
+          <div class="scan-row" role="row" style="--i:4">
+            <span class="port" role="cell">0/tcp</span>
+            <span class="state" role="cell">open</span>
+            <span class="service" role="cell">C Programming</span>
+            <span class="prof" role="cell"><span class="bar"><i style="--w:70%"></i></span></span>
+          </div>
+          <div class="scan-row" role="row" style="--i:5">
+            <span class="port" role="cell">443/tcp</span>
+            <span class="state" role="cell">open</span>
+            <span class="service" role="cell">Wireshark</span>
+            <span class="prof" role="cell"><span class="bar"><i style="--w:82%"></i></span></span>
+          </div>
+          <div class="scan-row" role="row" style="--i:6">
+            <span class="port" role="cell">21/tcp</span>
+            <span class="state" role="cell">open</span>
+            <span class="service" role="cell">Nmap</span>
+            <span class="prof" role="cell"><span class="bar"><i style="--w:86%"></i></span></span>
+          </div>
+          <div class="scan-row" role="row" style="--i:7">
+            <span class="port" role="cell">8443/tcp</span>
+            <span class="state" role="cell">open</span>
+            <span class="service" role="cell">Burp Suite</span>
+            <span class="prof" role="cell"><span class="bar"><i style="--w:75%"></i></span></span>
+          </div>
+          <div class="scan-row" role="row" style="--i:8">
+            <span class="port" role="cell">9418/tcp</span>
+            <span class="state" role="cell">open</span>
+            <span class="service" role="cell">Git &amp; GitHub</span>
+            <span class="prof" role="cell"><span class="bar"><i style="--w:84%"></i></span></span>
+          </div>
+        </div>
+
+        <p class="scan-footer">Nmap done: 1 IP address (1 host up) scanned — all systems operational.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="section">
+    <p class="section-eyebrow reveal">03 // PROJECTS</p>
+    <h2 class="section-title reveal">ls -la <span class="accent">./projects</span></h2>
+
+    <div class="grid projects-grid">
+      <article class="card project-card reveal">
+        <div class="window-titlebar">
+          <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+          <span class="window-filename">port_scanner.py</span>
+        </div>
+        <div class="card-body">
+          <h3>Port Scanner Tool</h3>
+          <p>A lightweight Python-based scanner that sweeps a target host for open TCP ports and flags likely running services — a hands-on take on how tools like Nmap work under the hood.</p>
+          <ul class="tag-list">
+            <li>Python</li><li>Sockets</li><li>Networking</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="card-link">Source</a>
+        </div>
+      </article>
+
+      <article class="card project-card reveal">
+        <div class="window-titlebar">
+          <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+          <span class="window-filename">pw_strength_checker.py</span>
+        </div>
+        <div class="card-body">
+          <h3>Password Strength Checker</h3>
+          <p>Analyzes password entropy, common patterns, and dictionary overlap in real time, then scores the result to help users understand what actually makes a password crackable.</p>
+          <ul class="tag-list">
+            <li>Python</li><li>Regex</li><li>Security</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="card-link">Source</a>
+        </div>
+      </article>
+
+      <article class="card project-card reveal">
+        <div class="window-titlebar">
+          <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+          <span class="window-filename">network_dashboard/</span>
+        </div>
+        <div class="card-body">
+          <h3>Network Monitoring Dashboard</h3>
+          <p>A live dashboard that visualizes traffic captured with Wireshark/Nmap sweeps — bandwidth usage, connected hosts, and anomaly flags rendered on a single pane of glass.</p>
+          <ul class="tag-list">
+            <li>Python</li><li>Wireshark</li><li>Dashboards</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="card-link">Source</a>
+        </div>
+      </article>
+
+      <article class="card project-card reveal">
+        <div class="window-titlebar">
+          <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+          <span class="window-filename">security_research_notes.md</span>
+        </div>
+        <div class="card-body">
+          <h3>Security Research Notes</h3>
+          <p>An ongoing, public knowledge base of CTF write-ups, CVE breakdowns, and lab notes from TryHackMe and Hack The Box — documenting the process, not just the flag.</p>
+          <ul class="tag-list">
+            <li>Markdown</li><li>Research</li><li>CTF</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="card-link">Source</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= CERTIFICATIONS ================= -->
+  <section id="certifications" class="section section-alt">
+    <p class="section-eyebrow reveal">04 // CERTIFICATIONS</p>
+    <h2 class="section-title reveal">ls -la <span class="accent">./certifications</span></h2>
+    <p class="section-sub reveal">Currently in progress — this shelf is being filled one exam at a time.</p>
+
+    <div class="grid certs-grid">
+      <div class="card cert-card reveal">
+        <div class="cert-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l7 3.5v5c0 4.6-3 8.9-7 10.5-4-1.6-7-5.9-7-10.5v-5L12 2z"/><path d="M9.5 12.5l1.8 1.8 3.2-3.6"/></svg>
+        </div>
+        <h3>Certification Slot</h3>
+        <p class="cert-issuer">Issuer — TBD</p>
+        <span class="badge badge-progress">IN PROGRESS</span>
+      </div>
+
+      <div class="card cert-card reveal">
+        <div class="cert-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l7 3.5v5c0 4.6-3 8.9-7 10.5-4-1.6-7-5.9-7-10.5v-5L12 2z"/><path d="M9.5 12.5l1.8 1.8 3.2-3.6"/></svg>
+        </div>
+        <h3>Certification Slot</h3>
+        <p class="cert-issuer">Issuer — TBD</p>
+        <span class="badge badge-planned">PLANNED</span>
+      </div>
+
+      <div class="card cert-card reveal">
+        <div class="cert-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l7 3.5v5c0 4.6-3 8.9-7 10.5-4-1.6-7-5.9-7-10.5v-5L12 2z"/><path d="M9.5 12.5l1.8 1.8 3.2-3.6"/></svg>
+        </div>
+        <h3>Certification Slot</h3>
+        <p class="cert-issuer">Issuer — TBD</p>
+        <span class="badge badge-planned">PLANNED</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LEARNING PLATFORMS ================= -->
+  <section id="learning" class="section">
+    <p class="section-eyebrow reveal">05 // LEARNING</p>
+    <h2 class="section-title reveal">active <span class="accent">training grounds</span></h2>
+
+    <div class="grid learning-grid">
+      <a href="https://tryhackme.com" target="_blank" rel="noopener" class="card learn-card reveal">
+        <div class="learn-mark">TH</div>
+        <div>
+          <h3>TryHackMe</h3>
+          <p>Guided rooms covering offensive and defensive security fundamentals.</p>
+        </div>
+        <span class="learn-status">● active</span>
+      </a>
+
+      <a href="https://www.hackthebox.com" target="_blank" rel="noopener" class="card learn-card reveal">
+        <div class="learn-mark">HTB</div>
+        <div>
+          <h3>Hack The Box</h3>
+          <p>Realistic vulnerable machines used to sharpen practical pentesting skills.</p>
+        </div>
+        <span class="learn-status">● active</span>
+      </a>
+
+      <a href="https://www.netacad.com" target="_blank" rel="noopener" class="card learn-card reveal">
+        <div class="learn-mark">CNA</div>
+        <div>
+          <h3>Cisco Networking Academy</h3>
+          <p>Structured coursework building a solid networking foundation.</p>
+        </div>
+        <span class="learn-status">● active</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section section-alt contact-section">
+    <p class="section-eyebrow reveal">06 // CONTACT</p>
+    <h2 class="section-title reveal">./connect <span class="accent">--secure</span></h2>
+    <p class="section-sub reveal">Open to collaborations, CTF teams, internships, and a good technical conversation.</p>
+
+    <div class="grid contact-grid">
+      <a href="https://github.com/" target="_blank" rel="noopener" class="card contact-card reveal">
+        <span class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 4.94 3.2 9.12 7.65 10.6.56.1.76-.24.76-.54 0-.27-.01-1.16-.02-2.1-3.11.68-3.77-1.32-3.77-1.32-.51-1.3-1.24-1.65-1.24-1.65-1.01-.7.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 1.71 2.62 1.22 3.26.93.1-.72.39-1.22.71-1.5-2.48-.28-5.1-1.24-5.1-5.53 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .93-.3 3.05 1.15.89-.25 1.84-.37 2.79-.37.95 0 1.9.13 2.79.37 2.12-1.44 3.05-1.15 3.05-1.15.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.3-2.62 5.24-5.12 5.52.4.35.76 1.03.76 2.08 0 1.5-.01 2.71-.01 3.08 0 .3.2.65.77.54A11.03 11.03 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg>
+        </span>
+        <div>
+          <h3>GitHub</h3>
+          <p>github.com/kayeskhan</p>
+        </div>
+      </a>
+
+      <a href="https://linkedin.com/" target="_blank" rel="noopener" class="card contact-card reveal">
+        <span class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0z"/></svg>
+        </span>
+        <div>
+          <h3>LinkedIn</h3>
+          <p>linkedin.com/in/kayeskhan</p>
+        </div>
+      </a>
+
+      <a href="mailto:kayes.khan@example.com" class="card contact-card reveal">
+        <span class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg>
+        </span>
+        <div>
+          <h3>Email</h3>
+          <p>kayes.khan@example.com</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#home" class="logo">
+        <span class="logo-bracket">&lt;</span>KAYES<span class="logo-accent">.KHAN</span><span class="logo-bracket">/&gt;</span>
+      </a>
+      <p>Securing the digital world, one vulnerability at a time.</p>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h4>Navigate</h4>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+      </div>
+      <div>
+        <h4>More</h4>
+        <a href="#certifications">Certifications</a>
+        <a href="#learning">Learning</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:kayes.khan@example.com">Email</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Kayes Khan. All rights reserved.</p>
+    <p class="footer-eof">// END_OF_FILE</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
